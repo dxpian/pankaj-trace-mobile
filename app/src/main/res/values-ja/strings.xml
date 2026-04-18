@@ -1,0 +1,455 @@
+<resources>
+    <string name="app_name">在庫追跡ー</string>
+    <!-- TODO: このプレースホルダーテキストを削除または変更する -->
+    <string name="hello_blank_fragment">ブランクフラグメントへようこそ</string>
+
+    <string name="cart_count" formatted="false">カート積載数 : %1$d</string>
+    <string-array name="trip_stop_reason">
+        <item>1:完了</item>
+        <item>2:遅延</item>
+        <item>3:キャンセル</item>
+        <item>4:その他</item>
+    </string-array>
+
+    <string-array name="cart_status_options">
+        <item>空</item>
+        <item>積載済み</item>
+    </string-array>
+
+    <string-array name="cart_location_options">
+        <item>物流センター</item>
+        <item>店舗</item>
+    </string-array>
+
+    <string name="start_trip">輸送を開始</string>
+
+    <string name="load_option_name">カートを積む</string>
+    <string name="unload_option_name">カートを降ろす</string>
+    <string name="return_option_name">カートを返却</string>
+    <string name="node_dc_title">ピックアップ場所</string>
+    <string name="node_store_title">配達場所</string>
+
+    <string name="status_name_cmp_noreach">未到達</string>
+    <string name="status_name_cmp_reach">到達</string>
+    <string name="status_name_cmp_leave">出発済み</string>
+
+    <string name="status_name_dc_reach">積載中</string>
+    <string name="status_name_dc_leave">出発済み</string>
+
+    <string name="status_name_store_init">未配達</string>
+    <string name="status_name_store_reach">到着済み</string>
+    <string name="status_name_store_deliver">配達中</string>
+    <string name="status_name_store_leave">出発済み</string>
+
+    <string name="no_cart">利用可能なカートがありません</string>
+    <!-- ナビゲーション用のフラグメントに使用する文字列 -->
+    <string name="first_fragment_label">最初のフラグメント</string>
+    <string name="second_fragment_label">2番目のフラグメント</string>
+    <string name="next">次へ</string>
+    <string name="previous">戻る</string>
+    <string name="map_store_unreached">未配送</string>
+    <string name="map_store_reached">到着済み: %s</string>
+    <string name="map_store_cart" formatted="false">配達: %d, ピックアップ: %d</string>
+    <string name="map_dc_leave">出発済み: %s</string>
+    <string name="map_dc_cart">積載: %d</string>
+
+    <!-- トラック設定ページ -->
+    <string name="helpDistance">トラックが特定の場所に到達したかを判断するための距離しきい値。</string>
+    <string name="helpScaning">トラックに積載されたすべてのカートタグをスキャンする最大時間</string>
+    <string name="helpLocation">トラックの位置を更新する時間間隔</string>
+    <string name="tracksetting_distance_value">%d m</string>
+    <string name="tracksetting_scantime_value">%d 分</string>
+    <string name="tracksetting_locupdate_value">%d 分</string>
+
+
+
+    <!--    splash activity-->
+    <string name="splash_login">ログイン</string>
+    <string name="splash_register">登録</string>
+
+    <string-array name="home_greetings">
+        <item>おはようございます</item>
+        <item>こんにちは</item>
+        <item>こんばんは</item>
+    </string-array>
+    <string name="stop_trip">輸送を停止</string>
+    <string name="status">ステータス: </string>
+    <string name="cart">カート -: </string>
+    <string name="loaded">積載済み</string>
+    <string name="delivered">配送完了</string>
+    <string name="returned">返却済み</string>
+    <string name="picked">ピックアップ済み</string>
+    <string name="pickup_time">出発時刻</string>
+    <string name="departure_time">出発時刻</string>
+    <string name="arrival_time">配達時刻</string>
+    <string name="retail_store">小売店</string>
+    <string name="address">住所: </string>
+    <string name="phone_number">電話番号</string>
+    <string name="update_pwd">パスワード更新</string>
+    <string name="update_apk">更新</string>
+    <string name="license">免許証</string>
+    <string name="vin">VIN</string>
+    <string name="vin_hint">トラック識別番号 (VIN)</string>
+    <string name="email">メールアドレス</string>
+    <string name="password">パスワード</string>
+    <string name="unload_photo">ドライバーの写真をアップロード</string>
+    <string name="code">コード: </string>
+    <string name="back_button">戻る</string>
+    <string name="hours">時間</string>
+    <string name="trips">輸送回数</string>
+    <string name="today">本日</string>
+    <string name="week">今週</string>
+    <string name="deliver_autostart">自動搬送認識</string>
+    <string name="deliver_autostart_help">配送はトラックが配送センターまたは物流会社を出発した時点でシステムによって自動的に開始されます</string>
+    <string name="deliver_from">輸送開始時間</string>
+    <string name="deliver_complete">輸送終了時間</string>
+    <string name="deliver_time_range_help">この時間範囲でのみ、輸送開始が自動的に識別されます</string>
+
+    <string name="company">会社</string>
+    <string name="select_company">会社を選択</string>
+    <string name="select_company_to_start_trip">輸送業務を開始する会社を選択</string>
+    <string name="driver_name">ドライバー名</string>
+    <string name="daily_hours">本日の稼働時間</string>
+    <string name="remain_hours">残り/\n0時間</string>
+    <string name="driver_time">運転</string>
+    <string name="no_trips">輸送回数</string>
+    <string name="break_time">休憩</string>
+    <string name="app_logo_string">今日も１日安全運転で気を付けてお過ごしください</string>
+    <string name="app_comment_string">輸送依頼がありました。トラックタイプを選んで運転席に座ってください。</string>
+    <string name="add_store_title">店舗を配送リストに追加</string>
+    <string name="select_dc_title">物流センターを選択</string>
+    <string name="stores_in_trip">追加された店舗: </string>
+    <string name="from">積荷元:</string>
+    <string name="to">荷下ろし先:</string>
+    <string name="dist_center">物流センター</string>
+    <string name="IOT">IoT</string>
+    <string name="product">商品</string>
+    <string name="checklist">チェックリスト</string>
+    <string name="scan">スキャン</string>
+    <string name="empty_loaded">空/\n積載済み</string>
+    <string name="loading_cart">カートを積載中</string>
+    <string name="start_trip_slash">輸送を開始</string>
+    <string name="load_cart">カートを積み込む</string>
+    <string name="return_cart">カートを返却</string>
+    <string name="start_journey">輸送を始める</string>
+
+    <string-array name="app_status_list">
+        <item>初期化</item>
+        <item>ロード中</item>
+        <item>稼働中</item>
+        <item>配送中</item>
+        <item>返却中</item>
+        <item>完了</item>
+        <item>不明</item>
+    </string-array>
+
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="apply">適用</string>
+    <string name="submit">送信</string>
+
+    <string name="status_overview">カートステータスの概要</string>
+    <string name="cart_loaded">カート \n積載済み</string>
+    <string name="empty_cart">空のカート</string>
+    <string name="confirm_unload">このカートを\n本当に下ろしますか？</string>
+    <string name="confirm_load">この物流センターから\nカートを積み込みますか？</string>
+
+    <string name="comment_for_search">店舗の情報を取得して、輸送をもっと簡単にしましょう。</string>
+    <string name="search_hint">ここで検索</string>
+    <string name="question_to_go">今日はどこに行きますか？</string>
+    <string name="top_week_store">今週のトップ店舗</string>
+    <string name="ready_start_trip">輸送を始める準備はできていますか？</string>
+    <string name="question_delete_account">アカウントを削除してよろしいですか？</string>
+    <string name="notify_delete_account">アカウントは正常に削除されました。</string>
+    <string name="ready_go">輸送を続けますか？</string>
+    <string name="deliver_cart">カートを配達</string>
+    <string name="deliver_cart_2">カートを\n配達</string>
+    <string name="deliver_to">配達先 :</string>
+    <string name="pickup_empty_cart">空のカートを回収</string>
+    <string name="hint_for_tag">IoT IDを入力</string>
+    <string name="pickup_from">回収場所</string>
+    <string name="question_pickup">カートを回収してもよろしいですか？</string>
+    <string name="confirm">確認</string>
+    <string name="process_in_store">カートを配達し、空のカートを回収</string>
+    <string name="load_cart_2">カートを\n積載</string>
+    <string name="empty_cart_2">空のカート\n</string>
+    <string name="truck_cart_overview">トラック内のカート概要</string>
+    <string name="pickup_cart">カートを回収</string>
+    <string name="select_rs">店舗を選択</string>
+    <string name="question_arrive_store">この店舗に到着しましたか？</string>
+    <string name="select_store">店舗を選択</string>
+    <string name="continue_trip">旅を続ける</string>
+    <string name="select_store_option">到着した店舗を\n選択</string>
+    <string name="handle_cart_option">カートの配達／回収</string>
+    <string name="continue_journey_option">輸送を続ける</string>
+    <string name="select_stop_place">輸送を終了する場所を選択</string>
+    <string name="logistic_company">物流会社</string>
+    <string name="other">その他</string>
+    <string name="parking">駐車場</string>
+    <string name="reason">理由: </string>
+    <string name="description">説明: </string>
+    <string name="descriptionhint">理由詳細説明</string>
+    <string name="addresshint">所在地住所</string>
+    <string name="check_remain_cart">残りのカートを確認: </string>
+    <string name="question_stop_trip">本当に輸送を終了しますか？</string>
+    <string name="trip_overview">輸送の概要</string>
+    <string name="cart_delivered">カート配達済み</string>
+    <string name="store_delivered">店舗配達済み</string>
+    <string name="journey_distance">輸送の距離</string>
+    <string name="journey_time">輸送の時間</string>
+    <string name="average_speed">平均速度</string>
+    <string name="comment_complete_task">輸送が正常に完了しました</string>
+
+    <!-- Edit profile -->
+    <string name="edit_profile">プロフィールを編集</string>
+    <string name="upload_photo">写真をアップロード +</string>
+    <string name="name">名前</string>
+    <string name="hint_name">ユーザー名</string>
+    <string name="hint_mail">メールアドレス</string>
+    <string name="confirm_pwd">パスワードを確認</string>
+    <string name="save">変更を保存</string>
+    <string name="my_truck">私のトラック</string>
+    <string name="hint_vin">VIN番号を入力</string>
+    <string name="notification">通知</string>
+    <string name="no_notification">通知が見つかりません</string>
+    <string name="clean_notification">通知をクリア</string>
+    <string name="email_address">メールアドレス</string>
+    <string name="trip">輸送</string>
+    <string name="payment_method">支払い方法</string>
+    <string name="license_register">ライセンス &amp; 登録</string>
+    <string name="privary_scurity">プライバシーとセキュリティ</string>
+    <string name="delete_account">アカウント削除</string>
+    <string name="track_setting">追跡設定</string>
+    <string name="ble_scan_time">BLEスキャン時間:</string>
+    <string name="distance_threshold">距離しきい値:</string>
+    <string name="loc_update_interval">位置情報更新間隔:</string>
+    <string name="timezone">タイムゾーン:</string>
+    <string name="hint_timezone">タイムゾーンを選択:</string>
+    <string name="view_trip">輸送を見る >></string>
+    <string name="view_route">ルートを見る >></string>
+    <string name="view_profile">プロフィールを見る >></string>
+    <string name="view_cart">カートを見る >></string>
+    <string name="logout">ログアウト</string>
+    <!--    language setting-->
+    <string name="app_setting">アプリ設定</string>
+    <string name="language">言語</string>
+    <string name="select_language">言語を設定</string>
+    <string name="require_apply_language_change">言語設定を適用するには、ログアウトして再度ログインする必要があります</string>
+
+
+
+
+
+    <!--    strings for ble tag scan-->
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name1">HC Connect</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="bt">Battery Level:</string>
+    <string name="change_adv">Set Broadcast Interval Successfully</string>
+    <string name="change_customer_fail">Failed to set Custom Data</string>
+    <string name="change_customer_ok">Set Custom Data Successfully</string>
+    <string name="change_fail">Failed</string>
+    <string name="change_major_fail">Failed to set Major</string>
+    <string name="change_major_ok">Set Major Successfully</string>
+    <string name="change_minor_fail">Failed to set Minor</string>
+    <string name="change_minor_ok">Set Minor Successfully</string>
+    <string name="change_name_OK">Set Device Name Successfully</string>
+    <string name="change_name_fail">Failed to set Device Name</string>
+    <string name="change_ok">Successful</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_rssi">Set RSSI at 1m Successfully</string>
+    <string name="change_txpower_fail">Failed to set Transmitting Power</string>
+    <string name="change_txpower_ok">Set Transmitting Power Successfully</string>
+    <string name="change_uuid_fail">Failed to set UUID</string>
+    <string name="change_uuid_ok">Set UUID Successfully</string>
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="check_password">Enter Password</string>
+    <string name="chip_text">Chip text</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="connect">Connect</string>
+    <string name="connect_ok">Password Correct</string>
+    <string name="connect_passwordError">Bad password, Disconnect</string>
+    <string name="data_error">Wrong data format</string>
+    <string name="disConnect">DisConnect</string>
+    <string name="disconnect">DisConnect</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="filter_advertising_data">Filter raw broadcast data</string>
+    <string name="filter_name_mac">Filter the name or MAC</string>
+    <string name="filter_tip">Set filtering rules</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="interval_str">Automatically adjust broadcast interval</string>
+    <string name="isClose">is close</string>
+    <string name="isOpen">is open</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="m3_ref_typeface_brand_display_regular">sans-serif</string>
+    <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
+    <string name="m3_ref_typeface_brand_regular">sans-serif</string>
+    <string name="m3_ref_typeface_plain_medium">sans-serif-medium</string>
+    <string name="m3_ref_typeface_plain_regular">sans-serif</string>
+    <string name="m3_sys_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="m3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="m3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_standard">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="m3_sys_typescale_body_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_body_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_body_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_display_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_medium_font">sans-serif</string>
+    <string name="m3_sys_typescale_headline_small_font">sans-serif</string>
+    <string name="m3_sys_typescale_label_large_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_label_medium_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_label_small_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_title_large_font">sans-serif</string>
+    <string name="m3_sys_typescale_title_medium_font">sans-serif-medium</string>
+    <string name="m3_sys_typescale_title_small_font">sans-serif-medium</string>
+    <string name="material_clock_display_divider">:</string>
+    <string name="material_clock_toggle_content_description">Select AM or PM</string>
+    <string name="material_hour_selection">Select hour</string>
+    <string name="material_hour_suffix">%1$s o\'clock</string>
+    <string name="material_minute_selection">Select minutes</string>
+    <string name="material_minute_suffix">%1$s minutes</string>
+    <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="material_slider_range_end">Range end,</string>
+    <string name="material_slider_range_start">Range start,</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+    <string name="material_timepicker_hour">Hour</string>
+    <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Select time</string>
+    <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+    <string name="mtrl_badge_numberless_content_description">New notification</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">More than %1$d new notifications</string>
+    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
+    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
+    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
+    <string name="mtrl_picker_cancel">@android:string/cancel</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Select Date</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
+    <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Invalid range.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Select Range</string>
+    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
+    <string name="mtrl_picker_save">Save</string>
+    <string name="mtrl_picker_text_input_date_hint">Date</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="noBle">Bluetooth has been turned off</string>
+    <string name="noGps">Mobile phone location has been turned off</string>
+    <string name="noSupportBle">This phone does not support low power Bluetooth, please use Android system 5.0 or above mobile phone</string>
+    <string name="no_device">There is no device that meets the criteria</string>
+    <string name="open">Open</string>
+    <string name="openOrclose">Turn On or Off:</string>
+    <string name="password_error">The password is incorrect. Please re-enter it.</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="passwords">Password</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pop_adv">Enables dynamic broadcast intervals</string>
+    <string name="pop_temp">Timely access to temperature and humidity</string>
+    <string name="reConnect">ReConnect</string>
+    <string name="redyconnect">Connect</string>
+    <string name="scankit_confirm">OK</string>
+    <string name="scankit_light">Turn light on</string>
+    <string name="scankit_light_off">Turn off light</string>
+    <string name="scankit_no_code_tip">No code detected.</string>
+    <string name="scankit_scan_tip">Place the code within the frame</string>
+    <string name="scankit_talkback_back">Back</string>
+    <string name="scankit_talkback_photo">Gallery</string>
+    <string name="scankit_title">Scan</string>
+    <string name="search_menu_title">Search</string>
+    <string name="send">Send</string>
+    <string name="setAdv">Broadcast Interval</string>
+    <string name="setCustomer">Customer Data</string>
+    <string name="setMajor">Major</string>
+    <string name="setMinor">Minor</string>
+    <string name="setName">Name</string>
+    <string name="setRssiAt1m">RSSI at 1m</string>
+    <string name="setTxPower">Tx Power</string>
+    <string name="setUUID">UUID</string>
+    <string name="shidu">Humidity:</string>
+    <string name="startScan">Start Scan</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stopScan">Stop Scan</string>
+    <string name="temp_str">Temperature and humidity detection interval</string>
+    <string name="tip">Please turn on Bluetooth and GPS</string>
+    <string name="tip_close_acc_sensor">Acceleration detection is not enabled</string>
+    <string name="tip_close_sensor">Turn off the temperature and humidity sensor</string>
+    <string name="tip_customer">Please enter 1-12 bytes of custom tag</string>
+    <string name="tip_mac_edit">MAC address are not editable</string>
+    <string name="tip_nam">Please enter an English name of 1-16 characters</string>
+    <string name="tip_number">Please enter values within 1-65535</string>
+    <string name="tip_password">Please enter a password of at least 4 characters</string>
+    <string name="tip_update_time">Seconds update</string>
+    <string name="tip_update_time_min">Millisecond broadcast</string>
+    <string name="tip_uuid">Please enter 16 bytes of UUID content</string>
+    <string name="version">Firmware Version</string>
+    <string name="apk_version">バージョン</string>
+    <string name="wendu">Temperature:</string>
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_node_dc_item"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/entityStatus"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dotcircle_incomplete"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:layout_margin="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <TextView
+                android:id="@+id/labelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/entityStatus"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/company"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="status"
+                app:layout_constraintLeft_toRightOf="@id/labelTitle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/edit"
+                android:visibility="invisible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id = "@+id/layoutBasicInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            >
+            <LinearLayout
+                android:id="@+id/layoutDetail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:maxLines="2"
+                    android:maxLength="30"
+                    android:textColor="@color/appColor"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_medium"
+                    android:ellipsize="end"
+                    android:paddingRight="5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/labelReachTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arrival_time"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:textColor="@color/appColor"
+                    android:textSize="@dimen/text_size_medium_sub"
+
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:id="@+id/checkedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:text="10:00 AM"
+                    android:textColor="@color/darkGray2"
+                    android:textSize="@dimen/text_size_small" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/showMoreControl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_expand_more_24"
+                    android:layout_gravity="end"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code"
+            android:textColor="@color/codeColor"
+            android:maxLines="2"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/itemAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:maxLines="2"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/darkGray2"
+            android:textStyle="bold"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutDetailInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/layDetailPickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:text="@string/arrival_time"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/darkGray2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/detailPickuptime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:text="10:00 AM"
+                    android:textSize="@dimen/text_size_small"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/darkGray2"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layDetailLeave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:text="@string/departure_time"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkGray2"/>
+                <TextView
+                    android:id="@+id/detailLeavetime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:text="10:00 AM"
+                    android:textSize="@dimen/text_size_small"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/darkGray2"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

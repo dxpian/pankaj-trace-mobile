@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/homicon"
+        android:iconTint="@color/white"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/menu_location"
+        android:icon="@drawable/location"
+        android:iconTint="@color/white"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/menu_checklist"
+        android:icon="@drawable/checklist"
+        android:iconTint="@color/white"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/profile"
+        android:iconTint="@color/white"
+        tools:ignore="MenuTitle" />
+</menu>

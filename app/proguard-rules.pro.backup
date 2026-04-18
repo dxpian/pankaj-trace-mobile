@@ -1,0 +1,91 @@
+
+-dontwarn okhttp3.**
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+
+# Retrofit - Keep Retrofit interface methods that use annotations
+-keepclassmembers,allowobfuscation interface * {
+    @retrofit2.http.* <methods>;
+}
+
+# Keep classes used by Gson (if you are using Gson for serialization/deserialization)
+# Retrofit related rules to prevent obfuscation issues
+-dontwarn okhttp3.**
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+
+# Retrofit - Keep Retrofit interface methods that use annotations
+-keepclassmembers,allowobfuscation interface * {
+    @retrofit2.http.* <methods>;
+}
+
+# Keep classes used by Gson (if you are using Gson for serialization/deserialization)
+-keep class com.google.gson.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+
+-keep class okhttp3.MultipartBody$Part { *; }
+-keep class okhttp3.RequestBody { *; }
+-dontwarn okhttp3.**
+
+
+# OkHttp related rules
+-dontwarn okhttp3.**
+-keep class okhttp3.** { *; }
+-keep interface okhttp3.** { *; }
+-keep class okhttp3.logging.** { *; }  # If you're using the logging interceptor
+
+# Keep the AuthInterceptor class
+-keep class myandroid.app.hhobzic.inventorymobile.api.model.** { *; }
+
+-keep class myandroid.app.hhobzic.inventorymobile.api.RetrofitCleintLocal { *; }
+-keep class myandroid.app.hhobzic.inventorymobile.api.RetrofitClientSecure { *; }
+
+
+# For handling SSL-related classes due to the custom SSL socket factory
+-dontwarn javax.net.ssl.SSLSocketFactory
+-dontwarn javax.net.ssl.SSLContext
+-keep class javax.net.ssl.SSLSocketFactory { *; }
+-keep class javax.net.ssl.SSLContext { *; }
+-keep class javax.net.ssl.TrustManager { *; }
+-keep class javax.net.ssl.X509TrustManager { *; }
+
+-keep class com.google.gson.reflect.TypeToken { *; }
+
+
+# Handling Huawei specific classes (based on missing_rules.txt)
+-dontwarn android.telephony.HwTelephonyManager
+-dontwarn com.huawei.android.os.BuildEx$VERSION
+-dontwarn com.huawei.libcore.io.ExternalStorageFile
+-dontwarn com.huawei.libcore.io.ExternalStorageFileInputStream
+-dontwarn com.huawei.libcore.io.ExternalStorageFileOutputStream
+-dontwarn com.huawei.libcore.io.ExternalStorageRandomAccessFile
+
+# Handling Bouncy Castle (if used in your app)
+-dontwarn org.bouncycastle.crypto.BlockCipher
+-dontwarn org.bouncycastle.crypto.engines.AESEngine
+-dontwarn org.bouncycastle.crypto.prng.SP800SecureRandom
+-dontwarn org.bouncycastle.crypto.prng.SP800SecureRandomBuilder
+-dontwarn org.bouncycastle.jsse.BCSSLParameters
+-dontwarn org.bouncycastle.jsse.BCSSLSocket
+-dontwarn org.bouncycastle.jsse.provider.BouncyCastleJsseProvider
+
+# Handling Conscrypt (if used for SSL and security)
+-dontwarn org.conscrypt.Conscrypt$Version
+-dontwarn org.conscrypt.Conscrypt
+-dontwarn org.conscrypt.ConscryptHostnameVerifier
+
+# Handling OpenJSSE (if used for SSL configurations)
+-dontwarn org.openjsse.javax.net.ssl.SSLParameters
+-dontwarn org.openjsse.javax.net.ssl.SSLSocket
+-dontwarn org.openjsse.net.ssl.OpenJSSE
+
+-dontwarn java.awt.event.ActionListener
+-dontwarn javax.swing.SwingUtilities
+-dontwarn javax.swing.Timer
+
+

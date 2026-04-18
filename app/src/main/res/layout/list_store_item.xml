@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/imgTrash"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:src="@drawable/vc_trash_48"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgTrash"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/_13sdp"
+                style="@style/TextAppearance.AppCompat.Title">
+            </TextView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/index"
+                android:text="Store Name"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/_13sdp"
+                style="@style/TextAppearance.AppCompat.Title">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/codeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:text="@string/code"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/_11sdp"
+                android:maxLines="3"
+                android:maxLength="50"
+                android:ellipsize="end"
+                android:textColor="@color/codeColor"
+                style="@style/TextAppearance.AppCompat.Subhead">
+            </TextView>
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:text="12345"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/_11sdp"
+                android:maxLines="3"
+                android:maxLength="50"
+                android:ellipsize="end"
+                android:textColor="@color/codeColor"
+                style="@style/TextAppearance.AppCompat.Subhead">
+            </TextView>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/subinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:text="Address"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/_11sdp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/appColor"
+            style="@style/TextAppearance.AppCompat.Subhead">
+        </TextView>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

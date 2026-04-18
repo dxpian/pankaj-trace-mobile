@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appColor">#40B7F4</color>
+    <color name="codeColor">#F1C31F</color>
+    <color name="addressColor">#272727</color>
+    <color name="errorColor">#F44336</color>
+    <color name="widgetBorder">#6A6A6A</color>
+    <color name="warnColor">#FFEB3B</color>
+    <color name="lightappColor">#BAE3F8</color>
+    <color name="tagHeader">#ECF5FA</color>
+    <color name="gray">#F4F4F4</color>
+    <color name="darkGray">#E3E3E3</color>
+    <color name="darkGray2">#8E8E8E</color>
+    <color name="darkGrayProgress">#334259</color>
+    <color name="loginIcon">#334259</color>
+    <color name="lightpurple">#EBEEF2</color>
+    <color name="disabledText">#CAC9C9</color>
+    <color name="brown">#DC8F1B</color>
+    <color name="lightbrown">#F6EDD9</color>
+    <color name="lightgreen">#20CD38</color>
+    <color name="thumb_border_color">#EBEEF2</color>
+    <color name="node_dc_back">#FFFFFF</color>
+    <color name="cart_item_back">#FAFDFC</color>
+    <color name="cart_item_detail_back">#D9E8D9</color>
+    <color name="node_store_back">#FAFBFD</color>
+    <color name="node_item_border">#B9D6FA</color>
+    <color name="map_header">#D0DADA</color>
+    <color name="map_course">@color/warnColor</color>
+    <color name="route_reached">#FFE68E02</color>
+    <color name="route_unreached">#72E68E02</color>
+    <color name="route_return">#72E68E02</color>
+    <color name="node_reached">#2382D5</color>
+    <color name="node_unreached">#BC0E0E</color>
+    <color name="map_snip_background">#88F6E7AE</color>
+    <color name="map_snip_border">#C1458BE3</color>
+    <color name="helpContent">#C1458BE3</color>
+
+</resources>

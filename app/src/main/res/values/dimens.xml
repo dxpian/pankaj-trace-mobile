@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="initial_additional_icon_margin_start">@dimen/_28sdp</dimen>
+    <dimen name="additional_icon_margin_location">@dimen/_106sdp</dimen>
+    <dimen name="additional_icon_margin_checklist">@dimen/_183sdp</dimen>
+    <dimen name="additional_icon_margin_profile">@dimen/_263sdp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_medium_sub">14sp</dimen>
+    <dimen name="text_size_small">@dimen/_8ssp</dimen>
+    <dimen name="text_size_large_2">16sp</dimen>
+    <dimen name="dropdown_vertical_offset">45dp</dimen>
+    <dimen name="dropdown_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

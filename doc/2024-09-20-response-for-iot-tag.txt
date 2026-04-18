@@ -1,0 +1,15 @@
+class WifiScanWorker(context: Context, workerParams: WorkerParameters) : Worker(context, workerParams) {
+	
+	private  ReadScanResultCallback readScanCallback  = null;
+    ScanManager(ReadScanResultCallback callback){
+        readScanCallback = callback;
+    }
+}
+
+In java file:
+interface  ReadScanResultCallback {
+    void postBeacon(ArrayList<Beacon> arrayList);
+
+}
+
+How does the WifiScanmanager implements the ReadScanResultCallback interface to read the wifi beacon list. 

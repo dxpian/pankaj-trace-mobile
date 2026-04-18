@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <!-- Text View -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_dc_title"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/appColor"
+            android:layout_marginStart="10dp"
+            android:textSize="28sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style = "@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="@string/select_dc_title"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompleteDc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:focusable="false"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/_10sdp"
+                android:drawableStart="@drawable/vc_distribution_center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/distCodeLabel"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/code"
+                android:maxLength="80"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/codeColor"/>
+            <TextView
+                android:id="@+id/distCode"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="2dp"
+                android:maxLength="80"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/codeColor"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/distDesc"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="2dp"
+            android:hint="@string/address"
+            android:maxLength="80"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/appColor"/>
+
+        <ImageView
+            android:id = "@+id/dcImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linedialoge"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/success"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_load"
+            android:textSize="@dimen/_15sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <!-- Button Layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            >
+
+            <!-- Scan Now Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirmLoad"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/skyblue"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="@string/apply"
+                android:layout_marginStart="10dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirmCancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/skyblue"
+                android:textColor="@color/white"
+                android:text="@string/cancel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
+
