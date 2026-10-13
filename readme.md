@@ -38,13 +38,13 @@ this command will show the jvm version which android studio is using now
 `keytool -list -v -keystore C:\Users\Milind\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android`
 - Fingerprint result: 
 `Certificate fingerprints:
-  SHA1: C6:FA:56:F8:05:F3:3E:75:93:E2:9A:CE:D2:CD:16:16:23:59:38:BF
-  SHA256: 21:C8:85:2C:47:E6:22:5B:35:51:39:60:FE:2F:67:C7:F5:12:75:A6:CB:2B:02:19:A8:47:FF:7A:E8:31:9B:6A`
+  SHA1: C6:FA:xxx:
+  SHA256: 21:C8:xxx`
 - for releasing  
   - command format:   
   `keytool -list -v -keystore <path_to_your_release_keystore> -alias <your_alias_name> -storepass <your_store_password>`
   - in my case:  
-  `keytool -list -v -keystore doc/honey.inventory_release_1.0.jks -alias ibtrace.inventory.release_1.0 -storepass RFV104F1D10fKTN`
+  `keytool -list -v -keystore doc/honey.inventory_release_1.0.jks -alias ibtrace.inventory.release_1.0 -storepass `
   fingerprint result of release mode: 
   
 ### add SHA1 fingerprint with package name to google api key 
